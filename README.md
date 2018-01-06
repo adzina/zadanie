@@ -2,6 +2,11 @@
 
 Zadanie rekrutacyjne
 
+## Przygotowanie środowiska
+
+Sklonuj repozytorium wpisując w linii poleceń `git clone https://github.com/adzina/zadanie`
+Pobierz niezbędne pakiety używając polecenia `npm install`
+
 ## Uruchomienie serwera
 
 By uruchomić serwer, wpisz w linii poleceń `node server.js`
