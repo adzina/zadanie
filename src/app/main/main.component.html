@@ -1,7 +1,9 @@
-<div style="text-align:center">
-  <h1>
-    Which repo has been updated most recently?
-  </h1>
-  <button type="button" class="btn" (click)="getLink()">Find out</button><br>
-  <a [href]="link">{{repo}}</a>
+<div class="container">
+  <div style="text-align:center">
+    <h1>
+      Which repo has been updated most recently?
+    </h1>
+    <button type="button" class="btn btn-info" (click)="getLink()">Find out</button><br><br>
+    <a [href]="link">{{repo}}</a>
+  </div>
 </div>
