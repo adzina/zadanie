@@ -15,12 +15,12 @@ export class MainComponent{
   }
 	getLink(){
 	   this.http.get('http://localhost:8081/scrape')
-     .map(res=>res.json())
-     .subscribe(
-       data=>{
-       	 this.link="https://github.com/allegro/"+data.repo;
-         this.repo=data.repo;
-         console.log(this.link);
-     })
+       .map(res=>res.json())
+       .subscribe(
+         data=>{
+           this.link="https://github.com/allegro/"+data.repo;
+           this.repo=data.repo;
+           console.log(this.link);
+       })
 	}
 }
