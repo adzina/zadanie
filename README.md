@@ -4,7 +4,7 @@ Zadanie rekrutacyjne
 
 ## Przygotowanie środowiska
 
-Sklonuj repozytorium wpisując w linii poleceń `git clone https://github.com/adzina/zadanie`
+Sklonuj repozytorium wpisując w linii poleceń `git clone https://github.com/adzina/zadanie`<br>
 Pobierz niezbędne pakiety używając polecenia `npm install`
 
 ## Uruchomienie serwera
