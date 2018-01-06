@@ -1,8 +1,7 @@
 <div style="text-align:center">
   <h1>
-    Click the button to see the link!
+    Which repo has been updated most recently?
   </h1>
-  <button type="button" class="btn" ((click))="getLink">Get the link</button><br>
-  <a href="link">{{link}}</a>
+  <button type="button" class="btn" (click)="getLink()">Find out</button><br>
+  <a [href]="link">{{repo}}</a>
 </div>
-

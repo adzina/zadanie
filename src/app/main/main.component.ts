@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable,Observer} from 'rxjs/Rx';
+import {Http} from '@angular/http';
+import 'rxjs/add/operator/map'
 
 @Component({
   selector: 'app-main',
@@ -7,11 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent{
   link:string;
-  
-  constructor() { 
-	this.link="https://github.com/allegro";
+  repo:string;
+  constructor(private http:Http) {
   }
 	getLink(){
-	
-	}	
+	   this.http.get('http://localhost:8081/scrape')
+     .map(res=>res.json())
+     .subscribe(
+       data=>{
+       	 this.link="https://github.com/allegro/"+data.repo;
+         this.repo=data.repo;
+         console.log(this.link);
+     })
+	}
 }
